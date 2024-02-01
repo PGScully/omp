@@ -92,17 +92,6 @@
           }
         },
         {
-          "type": "julia",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "p:black",
-          "background": "#4063D8",
-          "template": " \ue624 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
-          "properties": {
-            "fetch_version": true
-          }
-        },
-        {
           "type": "python",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
@@ -163,19 +152,6 @@
           "foreground": "p:white",
           "background": "p:blue",
           "template": "<p:blue,transparent>\ue0b6</> \uf489 {{ .Name }} <transparent,p:blue>\ue0b2</>"
-        },
-        {
-          "type": "ytm",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b2",
-          "invert_powerline": true,
-          "foreground": "p:white",
-          "background": "#1BD760",
-          "template": " \uf167 {{ .Icon }}{{ if ne .Status \"stopped\" }}{{ .Artist }} - {{ .Track }}{{ end }} ",
-          "properties": {
-            "paused_icon": "\uf04c ",
-            "playing_icon": "\uf04b "
-          }
         },
         {
           "type": "battery",
