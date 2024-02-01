@@ -30,7 +30,6 @@
           "background_templates": [
             "{{ if .Root }}p:dark-red{{else}}p:blue{{ end }}"
           ],
-          "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b0",
           "template": " {{ .UserName }}@{{ .HostName }} "
         },
