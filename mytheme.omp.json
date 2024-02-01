@@ -15,7 +15,7 @@
           "background": "#c386f1",
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b0",
-          "template": " {{ .UserName }} "
+          "template": " {{ .UserName }}@{{ .HostName }} "
         },
         {
           "type": "path",
@@ -134,38 +134,6 @@
           "properties": {
             "display_default": false
           }
-        },
-        {
-          "type": "root",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "#111111",
-          "background": "#ffff66",
-          "template": " \uf0ad "
-        },
-        {
-          "type": "executiontime",
-          "style": "plain",
-          "foreground": "#ffffff",
-          "background": "#83769c",
-          "template": "<transparent>\ue0b0</> \ueba2 {{ .FormattedMs }}\u2800",
-          "properties": {
-            "always_enabled": true
-          }
-        },
-        {
-          "type": "status",
-          "style": "diamond",
-          "foreground": "#ffffff",
-          "background": "#00897b",
-          "background_templates": [
-            "{{ if gt .Code 0 }}#e91e63{{ end }}"
-          ],
-          "trailing_diamond": "\ue0b4",
-          "template": "<parentBackground>\ue0b0</> \ue23a ",
-          "properties": {
-            "always_enabled": true
-          }
         }
       ]
     },
@@ -220,6 +188,45 @@
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b4",
           "template": " {{ .CurrentDate | date .Format }} "
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "root",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#111111",
+          "background": "#ffff66",
+          "template": " \uf0ad "
+        },
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "foreground": "#ffffff",
+          "background": "#83769c",
+          "template": "<transparent>\ue0b0</> \ueba2 {{ .FormattedMs }}\u2800",
+          "properties": {
+            "always_enabled": true
+          }
+        },
+        {
+          "type": "status",
+          "style": "diamond",
+          "foreground": "#ffffff",
+          "background": "#00897b",
+          "background_templates": [
+            "{{ if gt .Code 0 }}#e91e63{{ end }}"
+          ],
+          "trailing_diamond": "\ue0b4",
+          "template": "<parentBackground>\ue0b0</> \ue23a ",
+          "properties": {
+            "always_enabled": true
+          }
         }
       ]
     }
