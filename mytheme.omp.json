@@ -12,7 +12,9 @@
           "type": "session",
           "style": "diamond",
           "foreground": "#ffffff",
-          "background": "#c386f1",
+          "background_templates": [
+            "{{ if .Root }}#c00000{{else}}#0080ff{{ end }}"
+          ],
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b0",
           "template": " {{ .UserName }}@{{ .HostName }} "
