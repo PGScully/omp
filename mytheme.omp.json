@@ -6,11 +6,11 @@
     "dark-green": "#007F00",
     "dark-blue": "#00007F",
     "orange": "#FF7F00",
-    "teal": "#007F7F",
-    "dark-teal": "#004F4F",
+    "teal": "#008080",
+    "dark-teal": "#006060",
     "battery": "#c0a000",
     "battery-foreground": "white",
-    "battery-charging": "lightBlue",
+    "battery-charging": "blue",
     "battery-full": "p:dark-green",
     "battery-discharging": "p:orange",
     "git-foreground": "white",
@@ -35,14 +35,14 @@
             "{{ if .Root }}p:dark-red{{else}}p:dark-blue{{ end }}"
           ],
           "trailing_diamond": "\ue0b0",
-          "template": "{{ .UserName }}@{{ .HostName }} "
+          "template": " {{ .UserName }}@{{ .HostName }} "
         },
         {
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
-          "background": "p:dark-blue",
+          "background": "blue",
           "template": " {{ .Path }} ",
           "properties": {
             "folder_separator_icon": " \ue0b1 ",
@@ -83,7 +83,7 @@
           "powerline_symbol": "\ue0b2",
           "invert_powerline": true,
           "foreground": "white",
-          "background": "#83769c",
+          "background": "#406080",
           "template": "{{ .FormattedMs }}",
           "properties": {
             "always_enabled": true
@@ -124,6 +124,17 @@
       "alignment": "left",
       "newline": true,
       "segments": [
+        {
+          "type": "text",
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
+          "foreground": "white",
+          "background": "p:dark-blue",
+          "template": " {{ .PromptCount }} ",
+          "properties": {
+            "always_enabled": true
+          }
+        },
         {
           "type": "status",
           "style": "diamond",
