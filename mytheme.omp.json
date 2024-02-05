@@ -14,9 +14,9 @@
     "battery-full": "p:dark-green",
     "battery-discharging": "p:orange",
     "git-foreground": "white",
-    "git": "#c0a000",
+    "git": "p:dark-green",
     "git-modified": "#A05000",
-    "git-diverged": "#FF4500",
+    "git-diverged": "#A04500",
     "git-ahead": "#B388FF",
     "git-behind": "#B388FF"
   },
@@ -42,7 +42,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
-          "background": "blue",
+          "background": "p:dark-blue",
           "template": " {{ .Path }} ",
           "properties": {
             "folder_separator_icon": " \ue0b1 ",
