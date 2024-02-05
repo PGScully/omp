@@ -2,13 +2,15 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 2,
   "palette": {
-    "dark-red": "#7F0000",
-    "dark-green": "#007F00",
-    "dark-blue": "#00007F",
+    "error-bg": "#800000",
+    "admin-bg": "#800000",
+    "dark-red": "#600000",
+    "dark-green": "#006000",
+    "dark-blue": "#000060",
     "orange": "#FF7F00",
     "teal": "#008080",
-    "dark-teal": "#006060",
-    "battery": "#c0a000",
+    "dark-teal": "#005050",
+    "battery": "p:dark-green",
     "battery-foreground": "white",
     "battery-charging": "blue",
     "battery-full": "p:dark-green",
@@ -29,12 +31,13 @@
       "segments": [
         {
           "type": "session",
-          "style": "diamond",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "foreground": "white",
+          "background": "transparent",
           "background_templates": [
-            "{{ if .Root }}p:dark-red{{else}}p:dark-blue{{ end }}"
+            "{{ if .Root }}p:admin-bg{{else}}p:dark-blue{{ end }}"
           ],
-          "trailing_diamond": "\ue0b0",
           "template": " {{ .UserName }}@{{ .HostName }} "
         },
         {
@@ -62,8 +65,6 @@
             "{{ if gt .Ahead 0 }}p:git-ahead{{ end }}",
             "{{ if gt .Behind 0 }}p:git-behind{{ end }}"
           ],
-          "leading_diamond": "\ue0b6",
-          "trailing_diamond": "\ue0b4",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "properties": {
             "branch_max_length": 25,
@@ -100,8 +101,8 @@
         },
         {
           "type": "battery",
-          "style": "diamond",
-          "leading_diamond": "\ue0b2",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b2",
           "invert_powerline": true,
           "foreground": "p:battery-foreground",
           "background": "p:battery",
@@ -126,8 +127,8 @@
       "segments": [
         {
           "type": "text",
-          "style": "diamond",
-          "trailing_diamond": "\ue0b0",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "foreground": "white",
           "background": "p:dark-blue",
           "template": " {{ .PromptCount }} ",
@@ -137,12 +138,12 @@
         },
         {
           "type": "status",
-          "style": "diamond",
-          "trailing_diamond": "\ue0b0",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "foreground": "white",
           "background": "p:dark-green",
           "background_templates": [
-            "{{ if .Error }}p:dark-red{{ end }}"
+            "{{ if .Error }}p:error-bg{{ end }}"
           ],
           "template": " {{ .Code }} ",
           "properties": {
