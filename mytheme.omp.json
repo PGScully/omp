@@ -4,9 +4,9 @@
   "palette": {
     "error-bg": "#800000",
     "admin-bg": "#800000",
-    "dark-red": "#600000",
-    "dark-green": "#006000",
-    "dark-blue": "#000060",
+    "dark-red": "#700000",
+    "dark-green": "#007000",
+    "dark-blue": "#000070",
     "orange": "#FF7F00",
     "teal": "#008080",
     "dark-teal": "#005050",
@@ -17,10 +17,10 @@
     "battery-discharging": "p:orange",
     "git-foreground": "white",
     "git": "p:dark-green",
-    "git-modified": "#A05000",
-    "git-diverged": "#A04500",
-    "git-ahead": "#B388FF",
-    "git-behind": "#B388FF"
+    "git-modified": "green",
+    "git-diverged": "#A06000",
+    "git-ahead": "#7040A0",
+    "git-behind": "#7040A0"
   },
   "final_space": true,
   "console_title_template": "{{ if .Root }}root {{ end }}{{ .Shell }} in {{ .Folder }}",
@@ -34,9 +34,9 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
-          "background": "transparent",
+          "background": "p:dark-blue",
           "background_templates": [
-            "{{ if .Root }}p:admin-bg{{else}}p:dark-blue{{ end }}"
+            "{{ if .Root }}p:admin-bg{{ end }}"
           ],
           "template": " {{ .UserName }}@{{ .HostName }} "
         },
@@ -45,7 +45,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
-          "background": "p:dark-blue",
+          "background": "blue",
           "template": " {{ .Path }} ",
           "properties": {
             "folder_separator_icon": " \ue0b1 ",
