@@ -46,12 +46,27 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
-          "background": "blue",
+          "background": "p:dark-green",
+          "template": " {{ .StackCount }} ",
+          "properties": {
+            "folder_separator_icon": " \ue0b1 ",
+            "home_icon": "~",
+            "style": "agnoster_short",
+            "max_depth": 4
+          }
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "white",
+          "background": "p:dark-blue",
           "template": " {{ .Path }} ",
           "properties": {
             "folder_separator_icon": " \ue0b1 ",
             "home_icon": "~",
-            "style": "folder"
+            "style": "agnoster_short",
+            "max_depth": 4
           }
         },
         {
