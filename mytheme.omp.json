@@ -5,7 +5,8 @@
     "error-bg": "#800000",
     "admin-bg": "#800000",
     "dark-red": "#700000",
-    "dark-green": "#007000",
+    "green": "#008000",
+    "dark-green": "#006000",
     "dark-blue": "#000070",
     "orange": "#FF7F00",
     "teal": "#008080",
@@ -17,7 +18,7 @@
     "battery-discharging": "p:orange",
     "git-foreground": "white",
     "git": "p:dark-green",
-    "git-modified": "green",
+    "git-modified": "p:green",
     "git-diverged": "#A06000",
     "git-ahead": "#7040A0",
     "git-behind": "#7040A0"
