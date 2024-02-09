@@ -4,6 +4,7 @@
         "azfunc",
         "executiontime",
         "powerline",
-        "rprompt"
+        "rprompt",
+        "Venv"
     ]
 }

@@ -54,6 +54,14 @@
           "template": " {{ .StackCount }} "
         },
         {
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "background": "p:python-bg",
+          "foreground": "p:python-fg",
+          "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}"
+        },
+        {
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
@@ -66,14 +74,6 @@
             "style": "agnoster_short",
             "max_depth": 4
           }
-        },
-        {
-          "type": "python",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "background": "p:python-bg",
-          "foreground": "p:python-fg",
-          "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}"
         },
         {
           "type": "git",
