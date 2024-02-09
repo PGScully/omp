@@ -9,19 +9,23 @@
     "dark-green": "#006000",
     "dark-blue": "#000070",
     "orange": "#FF7F00",
+    "dark-orange": "#B05000",
     "teal": "#008080",
     "dark-teal": "#004040",
     "battery": "p:dark-green",
     "battery-foreground": "white",
     "battery-charging": "blue",
     "battery-full": "p:dark-green",
-    "battery-discharging": "p:orange",
+    "battery-discharging": "p:dark-orange",
     "git-foreground": "white",
     "git": "p:dark-green",
     "git-modified": "p:green",
-    "git-diverged": "#A06000",
+    "git-diverged": "p:dark-orange",
     "git-ahead": "#7040A0",
-    "git-behind": "#7040A0"
+    "git-behind": "#7040A0",
+    "python-fg": "#FFE873",
+    "python-bg": "#306998",
+    "exec-time": "#406080"
   },
   "final_space": true,
   "console_title_template": "{{ if .Root }}root {{ end }}{{ .Shell }} in {{ .Folder }}",
@@ -67,8 +71,8 @@
           "type": "python",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "background": "#306998",
-          "foreground": "#FFE873",
+          "background": "p:python-bg",
+          "foreground": "p:python-fg",
           "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}"
         },
         {
@@ -102,7 +106,7 @@
           "powerline_symbol": "\ue0b2",
           "invert_powerline": true,
           "foreground": "white",
-          "background": "#406080",
+          "background": "p:exec-time",
           "template": "{{ .FormattedMs }}",
           "properties": {
             "always_enabled": true
