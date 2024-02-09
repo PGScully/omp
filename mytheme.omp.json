@@ -10,7 +10,7 @@
     "dark-blue": "#000070",
     "orange": "#FF7F00",
     "teal": "#008080",
-    "dark-teal": "#005050",
+    "dark-teal": "#004040",
     "battery": "p:dark-green",
     "battery-foreground": "white",
     "battery-charging": "blue",
@@ -46,14 +46,8 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
-          "background": "p:dark-green",
-          "template": " {{ .StackCount }} ",
-          "properties": {
-            "folder_separator_icon": " \ue0b1 ",
-            "home_icon": "~",
-            "style": "agnoster_short",
-            "max_depth": 4
-          }
+          "background": "p:dark-teal",
+          "template": " {{ .StackCount }} "
         },
         {
           "type": "path",
@@ -157,7 +151,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
-          "background": "p:dark-green",
+          "background": "p:dark-teal",
           "background_templates": [
             "{{ if .Error }}p:error-bg{{ end }}"
           ],
