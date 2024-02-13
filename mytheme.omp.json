@@ -59,7 +59,7 @@
           "powerline_symbol": "\ue0b0",
           "background": "p:python-bg",
           "foreground": "p:python-fg",
-          "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}"
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
         },
         {
           "type": "path",
