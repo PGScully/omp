@@ -10,6 +10,8 @@
     "dark-blue": "#000070",
     "orange": "#FF7F00",
     "dark-orange": "#B05000",
+    "yellow": "#FFFF00",
+    "dark-yellow": "#C0C000",
     "teal": "#008080",
     "dark-teal": "#004040",
     "battery": "p:dark-green",
@@ -75,16 +77,16 @@
           "type": "dart",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#ffffff",
-          "background": "#06A4CE",
+          "foreground": "p:yellow",
+          "background": "blue",
           "template": " \ue798 {{ .Full }} "
         },
         {
           "type": "flutter",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#ffffff",
-          "background": "#06A4CE",
+          "foreground": "p:yellow",
+          "background": "blue",
           "template": " \ue28e {{ .Full }} "
         },
         {
