@@ -45,7 +45,7 @@
           "background_templates": [
             "{{ if .Root }}p:admin-bg{{ end }}"
           ],
-          "template": " {{ .UserName }}@{{ .HostName }} "
+          "template": " {{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}@{{ .HostName }} "
         },
         {
           "type": "path",
