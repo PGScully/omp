@@ -107,7 +107,7 @@
           "invert_powerline": true,
           "foreground": "white",
           "background": "p:exec-time",
-          "template": "{{ .FormattedMs }}",
+          "template": " {{ .FormattedMs }} ",
           "properties": {
             "always_enabled": true
           }
