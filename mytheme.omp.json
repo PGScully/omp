@@ -72,6 +72,22 @@
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
         },
         {
+          "type": "dart",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#06A4CE",
+          "template": " \ue798 {{ .Full }} "
+        },
+        {
+          "type": "flutter",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#06A4CE",
+          "template": " \ue28e {{ .Full }} "
+        },
+        {
           "type": "python",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
