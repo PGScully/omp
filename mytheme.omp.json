@@ -25,6 +25,8 @@
     "git-behind": "#7040A0",
     "python-fg": "#FFE873",
     "python-bg": "#306998",
+    "npm-fg": "#193549",
+    "npm-bg": "#ffeb3b",
     "exec-time": "#406080"
   },
   "final_space": true,
@@ -60,6 +62,14 @@
           "background": "p:python-bg",
           "foreground": "p:python-fg",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
+        },
+        {
+          "type": "npm",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "p:npm-fg",
+          "background": "p:npm-bg",
+          "template": "  {{ .Full }} "
         },
         {
           "type": "path",
