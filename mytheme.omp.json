@@ -42,7 +42,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
           "background": "p:dark-orange",
-          "template": " {{ if .SSHSession }}\udb82\udcc0{{ end }} "
+          "template": " {{ if .SSHSession }}\udb81\udc84{{ end }} "
         },
         {
           "type": "session",
@@ -67,8 +67,8 @@
           "type": "python",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "background": "p:python-bg",
           "foreground": "p:python-fg",
+          "background": "p:python-bg",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
         },
         {
@@ -77,7 +77,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:npm-fg",
           "background": "p:npm-bg",
-          "template": "  {{ .Full }} "
+          "template": " \ue71e {{ .Full }} "
         },
         {
           "type": "path",
