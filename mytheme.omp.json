@@ -45,7 +45,15 @@
           "background_templates": [
             "{{ if .Root }}p:admin-bg{{ end }}"
           ],
-          "template": " {{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}@{{ .HostName }} "
+          "template": " {{ .UserName }}@{{ .HostName }} "
+        },
+        {
+          "type": "session",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "white",
+          "background": "p:dark-orange",
+          "template": " {{ if .SSHSession }}\ueba9{{ end }} "
         },
         {
           "type": "path",
