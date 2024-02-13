@@ -64,12 +64,68 @@
           "template": " {{ .StackCount }} "
         },
         {
+          "type": "project",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#193549",
+          "background": "#ffeb3b",
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
+        },
+        {
+          "type": "dart",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#06A4CE",
+          "template": " \ue798 {{ .Full }} "
+        },
+        {
+          "type": "flutter",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#06A4CE",
+          "template": " \ue28e {{ .Full }} "
+        },
+        {
           "type": "python",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:python-fg",
           "background": "p:python-bg",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
+        },
+        {
+          "type": "kotlin",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#906cff",
+          "template": " \ue634 {{ .Full }} "
+        },
+        {
+          "type": "java",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#4063D8",
+          "template": " \ue738 {{ .Full }}"
+        },
+        {
+          "type": "go",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#7FD5EA",
+          "template": " \ue724 {{ .Full }} "
+        },
+        {
+          "type": "rust",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#193549",
+          "background": "#99908a",
+          "template": " \ue7a8 {{ .Full }} "
         },
         {
           "type": "npm",
