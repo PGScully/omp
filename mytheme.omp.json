@@ -11,7 +11,7 @@
     "orange": "#FF7F00",
     "dark-orange": "#B05000",
     "yellow": "#FFFF00",
-    "dark-yellow": "#C0C000",
+    "dark-yellow": "#ffc329",
     "teal": "#008080",
     "dark-teal": "#004040",
     "battery": "p:dark-green",
@@ -69,8 +69,8 @@
           "type": "project",
           "style": "powerline",
           "powerline_symbol": "",
-          "foreground": "#193549",
-          "background": "#ffeb3b",
+          "foreground": "black",
+          "background": "p:dark-yellow",
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
         },
         {
