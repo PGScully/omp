@@ -74,20 +74,20 @@
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
         },
         {
-          "type": "dart",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "p:yellow",
-          "background": "blue",
-          "template": " \ue798 {{ .Full }} "
-        },
-        {
           "type": "flutter",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
           "template": " \ue28e {{ .Full }} "
+        },
+        {
+          "type": "dart",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:yellow",
+          "background": "blue",
+          "template": " \ue798 {{ .Full }} "
         },
         {
           "type": "python",
