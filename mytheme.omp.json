@@ -55,14 +55,14 @@
           "background": "p:dark-orange",
           "template": " {{ if .WSL }}WSL{{ end }} "
         },
-		{
+        {
           "type": "os",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
           "background": "p:dark-green",
           "template": " {{ .Icon }} "
-		},
+        },
         {
           "type": "session",
           "style": "powerline",
@@ -89,22 +89,6 @@
           "foreground": "black",
           "background": "p:dark-yellow",
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
-        },
-        {
-          "type": "flutter",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "p:yellow",
-          "background": "blue",
-          "template": " \ue28e {{ .Full }} "
-        },
-        {
-          "type": "dart",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "p:yellow",
-          "background": "blue",
-          "template": " \ue798 {{ .Full }} "
         },
         {
           "type": "python",
