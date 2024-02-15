@@ -52,6 +52,14 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
+          "background": "p:dark-orange",
+          "template": " {{ if .WSL }}WSL{{ end }} "
+        },
+        {
+          "type": "session",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "white",
           "background": "p:dark-blue",
           "background_templates": [
             "{{ if .Root }}p:admin-bg{{ end }}"
