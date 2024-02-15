@@ -32,6 +32,7 @@
     "exec-time": "#406080"
   },
   "final_space": true,
+  "shell_integration": true,
   "console_title_template": "{{ if .Root }}root {{ end }}{{ .Shell }} in {{ .Folder }}",
   "blocks": [
     {
@@ -68,10 +69,10 @@
         {
           "type": "project",
           "style": "powerline",
-          "powerline_symbol": "",
+          "powerline_symbol": "\ue0b0",
           "foreground": "black",
           "background": "p:dark-yellow",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
         },
         {
           "type": "flutter",
@@ -101,7 +102,7 @@
           "type": "kotlin",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#ffffff",
+          "foreground": "p:yellow",
           "background": "#906cff",
           "template": " \ue634 {{ .Full }} "
         },
@@ -109,7 +110,7 @@
           "type": "java",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#ffffff",
+          "foreground": "p:yellow",
           "background": "#4063D8",
           "template": " \ue738 {{ .Full }}"
         },
