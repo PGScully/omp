@@ -48,13 +48,21 @@
           "template": " {{ if .SSHSession }}\udb81\udc84{{ end }} "
         },
         {
-          "type": "session",
+          "type": "text",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "white",
           "background": "p:dark-orange",
           "template": " {{ if .WSL }}WSL{{ end }} "
         },
+		{
+          "type": "os",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "white",
+          "background": "p:dark-green",
+          "template": " {{ .Icon }} "
+		},
         {
           "type": "session",
           "style": "powerline",
