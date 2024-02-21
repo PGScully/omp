@@ -91,12 +91,37 @@
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
         },
         {
+          "type": "flutter",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:yellow",
+          "background": "blue",
+          "template": " \ue28e {{ .Full }} ",
+          "properties": {
+            "cache_version": true
+          }
+        },
+        {
+          "type": "dart",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:yellow",
+          "background": "blue",
+          "template": " \ue64c {{ .Full }} ",
+          "properties": {
+            "cache_version": true
+          }
+        },
+        {
           "type": "python",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:python-fg",
           "background": "p:python-bg",
-          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "properties": {
+            "cache_version": true
+          }
         },
         {
           "type": "kotlin",
@@ -104,7 +129,10 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "#906cff",
-          "template": " \ue634 {{ .Full }} "
+          "template": " \ue634 {{ .Full }} ",
+          "properties": {
+            "cache_version": true
+          }
         },
         {
           "type": "java",
@@ -112,7 +140,10 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "#4063D8",
-          "template": " \ue738 {{ .Full }}"
+          "template": " \ue738 {{ .Full }}",
+          "properties": {
+            "cache_version": true
+          }
         },
         {
           "type": "go",
@@ -120,7 +151,10 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "#ffffff",
           "background": "#7FD5EA",
-          "template": " \ue724 {{ .Full }} "
+          "template": " \ue724 {{ .Full }} ",
+          "properties": {
+            "cache_version": true
+          }
         },
         {
           "type": "rust",
@@ -128,7 +162,10 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "#193549",
           "background": "#99908a",
-          "template": " \ue7a8 {{ .Full }} "
+          "template": " \ue7a8 {{ .Full }} ",
+          "properties": {
+            "cache_version": true
+          }
         },
         {
           "type": "ruby",
@@ -136,7 +173,10 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "#ffffff",
           "background": "#4063D8",
-          "template": "  {{ .Full }}"
+          "template": "  {{ .Full }}",
+          "properties": {
+            "cache_version": true
+          }
         },
         {
           "type": "npm",
@@ -144,7 +184,10 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:npm-fg",
           "background": "p:npm-bg",
-          "template": " \ue71e {{ .Full }} "
+          "template": " \ue71e {{ .Full }} ",
+          "properties": {
+            "cache_version": true
+          }
         },
         {
           "type": "path",
