@@ -172,8 +172,8 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "#ffffff",
-          "background": "#4063D8",
-          "template": "  {{ .Full }}",
+          "background": "p:dark-red",
+          "template": " \ue739 {{ .Full }}",
           "properties": {
             "cache_version": true
           }
