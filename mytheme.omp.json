@@ -216,6 +216,15 @@
             "charging_icon": "\ue234 ",
             "discharging_icon": "\ue231 "
           }
+        },
+        {
+          "type": "upgrade",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b2",
+          "invert_powerline": true,
+          "foreground": "#111111",
+          "background": "#FFD664",
+          "template": " \uf019 "
         }
       ]
     },
