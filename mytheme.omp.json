@@ -224,7 +224,10 @@
           "invert_powerline": true,
           "foreground": "#111111",
           "background": "#FFD664",
-          "template": " \uf019 "
+          "template": " \uf019 ",
+          "properties": {
+            "cache_timeout": 1320
+          }
         }
       ]
     },
