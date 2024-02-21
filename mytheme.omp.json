@@ -107,7 +107,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
-          "template": " \ue64c {{ .Full }} ",
+          "template": " \ue798 {{ .Full }} ",
           "properties": {
             "cache_version": true
           }
