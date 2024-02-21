@@ -131,6 +131,14 @@
           "template": " \ue7a8 {{ .Full }} "
         },
         {
+          "type": "ruby",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#4063D8",
+          "template": "  {{ .Full }}"
+        },
+        {
           "type": "npm",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
