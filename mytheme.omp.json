@@ -179,6 +179,17 @@
           }
         },
         {
+          "type": "node",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#6CA35E",
+          "template": " \udb80\udf99 {{ .Full }} ",
+          "properties": {
+            "cache_version": true
+          }
+        },
+        {
           "type": "npm",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
