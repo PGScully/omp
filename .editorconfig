@@ -1,0 +1,4 @@
+root = false
+
+[*.json]
+indent_size = 2
