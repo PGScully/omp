@@ -238,6 +238,8 @@
     },
     {
       "type": "rprompt",
+      "alignment": "right",
+      "newline": false,
       "segments": [
         {
           "type": "executiontime",
