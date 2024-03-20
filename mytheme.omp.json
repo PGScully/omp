@@ -260,7 +260,7 @@
           "powerline_symbol": "\ue0b2",
           "foreground": "#ffffff",
           "background": "#8f43f3",
-          "template": " \ue266 {{ round .PhysicalPercentUsed .Precision }}% \udb81\uddee {{ round .SwapPercentUsed .Precision }}% ",
+          "template": " \ue266 {{ round .PhysicalPercentUsed .Precision }}% ",
           "properties": {
             "precision": 2
           }
