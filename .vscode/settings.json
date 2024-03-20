@@ -5,6 +5,7 @@
         "executiontime",
         "powerline",
         "rprompt",
+        "sysinfo",
         "Venv"
     ]
 }
