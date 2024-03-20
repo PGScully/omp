@@ -14,12 +14,13 @@
     "dark-yellow": "#ffc329",
     "teal": "#008080",
     "dark-teal": "#004040",
+    "white": "#E0E0E0",
     "battery": "p:dark-green",
-    "battery-foreground": "white",
+    "battery-foreground": "p:white",
     "battery-charging": "blue",
     "battery-full": "p:dark-green",
     "battery-discharging": "p:dark-orange",
-    "git-foreground": "white",
+    "git-foreground": "p:white",
     "git": "p:dark-green",
     "git-modified": "p:green",
     "git-diverged": "p:dark-orange",
@@ -29,7 +30,9 @@
     "python-bg": "#306998",
     "npm-fg": "#ffc329",
     "npm-bg": "#711418",
-    "exec-time": "#406080"
+    "exec-time": "#406080",
+    "ram-fg": "p:white",
+    "ram-bg": "#8f43f3"
   },
   "final_space": true,
   "shell_integration": true,
@@ -43,7 +46,7 @@
           "type": "session",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:dark-orange",
           "template": " {{ if .SSHSession }}\udb81\udc84{{ end }} "
         },
@@ -51,7 +54,7 @@
           "type": "text",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:dark-orange",
           "template": " {{ if .WSL }}WSL{{ end }} "
         },
@@ -59,7 +62,7 @@
           "type": "os",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:dark-green",
           "template": " {{ .Icon }} "
         },
@@ -67,7 +70,7 @@
           "type": "session",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:dark-blue",
           "background_templates": [
             "{{ if .Root }}p:admin-bg{{ end }}"
@@ -78,7 +81,7 @@
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:dark-teal",
           "template": " {{ .StackCount }} "
         },
@@ -149,7 +152,7 @@
           "type": "go",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#ffffff",
+          "foreground": "p:white",
           "background": "#7FD5EA",
           "template": " \ue724 {{ .Full }} ",
           "properties": {
@@ -171,7 +174,7 @@
           "type": "ruby",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#ffffff",
+          "foreground": "p:white",
           "background": "p:dark-red",
           "template": " \ue739 {{ .Full }}",
           "properties": {
@@ -182,7 +185,7 @@
           "type": "node",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#ffffff",
+          "foreground": "p:white",
           "background": "#6CA35E",
           "template": " \udb80\udf99 {{ .Full }} ",
           "properties": {
@@ -204,7 +207,7 @@
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:dark-blue",
           "template": " {{ .Path }} ",
           "properties": {
@@ -246,7 +249,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b2",
           "invert_powerline": true,
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:exec-time",
           "template": " {{ .FormattedMs }} ",
           "properties": {
@@ -258,8 +261,8 @@
           "style": "powerline",
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
-          "foreground": "#ffffff",
-          "background": "#8f43f3",
+          "foreground": "p:ram-fg",
+          "background": "p:ram-bg",
           "template": " \ue266 {{ round .PhysicalPercentUsed .Precision }}% ",
           "properties": {
             "precision": 2
@@ -270,7 +273,7 @@
           "style": "powerline",
           "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:dark-teal",
           "template": " {{ .CurrentDate | date .Format }} "
         },
@@ -316,7 +319,7 @@
           "type": "text",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:dark-blue",
           "template": " {{ .PromptCount }} ",
           "properties": {
@@ -327,7 +330,7 @@
           "type": "status",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "white",
+          "foreground": "p:white",
           "background": "p:dark-teal",
           "background_templates": [
             "{{ if .Error }}p:error-bg{{ end }}"
