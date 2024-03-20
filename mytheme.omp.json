@@ -254,12 +254,24 @@
           }
         },
         {
+          "type": "sysinfo",
+          "style": "powerline",
+          "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
+          "foreground": "#ffffff",
+          "background": "#8f43f3",
+          "template": " \ue266 {{ round .PhysicalPercentUsed .Precision }}% \udb81\uddee {{ round .SwapPercentUsed .Precision }}% ",
+          "properties": {
+            "precision": 2
+          }
+        },
+        {
           "type": "time",
           "style": "powerline",
           "invert_powerline": true,
+          "powerline_symbol": "\ue0b2",
           "foreground": "white",
           "background": "p:dark-teal",
-          "powerline_symbol": "\ue0b2",
           "template": " {{ .CurrentDate | date .Format }} "
         },
         {
