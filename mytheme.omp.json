@@ -26,13 +26,21 @@
     "git-diverged": "p:dark-orange",
     "git-ahead": "#7040A0",
     "git-behind": "#7040A0",
+    "go-bg": "#7FD5EA",
+    "java-bg": "#4063D8",
+    "kotlin-bg": "#906cff",
     "python-fg": "#FFE873",
     "python-bg": "#306998",
     "npm-fg": "#ffc329",
     "npm-bg": "#711418",
+    "node-bg": "#6CA35E",
     "exec-time": "#406080",
     "ram-fg": "p:white",
-    "ram-bg": "#8f43f3"
+    "ram-bg": "#7040A0",
+    "rust-fg": "#193459",
+    "rust-bg": "#99908a",
+    "upgrade-fg": "#111111",
+    "upgrade-bg": "#FFD664"
   },
   "final_space": true,
   "shell_integration": true,
@@ -131,7 +139,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
-          "background": "#906cff",
+          "background": "p:kotlin-bg",
           "template": " \ue634 {{ .Full }} ",
           "properties": {
             "cache_version": true
@@ -142,7 +150,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
-          "background": "#4063D8",
+          "background": "p:java-bg",
           "template": " \ue738 {{ .Full }}",
           "properties": {
             "cache_version": true
@@ -153,7 +161,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
-          "background": "#7FD5EA",
+          "background": "p:go-bg",
           "template": " \ue724 {{ .Full }} ",
           "properties": {
             "cache_version": true
@@ -163,8 +171,8 @@
           "type": "rust",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#193549",
-          "background": "#99908a",
+          "foreground": "p:rust-fg",
+          "background": "p:rust-bg",
           "template": " \ue7a8 {{ .Full }} ",
           "properties": {
             "cache_version": true
@@ -186,7 +194,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
-          "background": "#6CA35E",
+          "background": "p:node-bg",
           "template": " \udb80\udf99 {{ .Full }} ",
           "properties": {
             "cache_version": true
@@ -301,8 +309,8 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b2",
           "invert_powerline": true,
-          "foreground": "#111111",
-          "background": "#FFD664",
+          "foreground": "p:upgrade-fg",
+          "background": "p:upgrade-bg",
           "template": " \uf019 ",
           "properties": {
             "cache_timeout": 1320
