@@ -49,10 +49,12 @@
     {
       "type": "prompt",
       "alignment": "left",
+      "overflow": "break",
       "segments": [
         {
           "type": "session",
           "style": "powerline",
+          "leading_powerline_symbol": "\ue0d7",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:dark-orange",
@@ -61,6 +63,7 @@
         {
           "type": "text",
           "style": "powerline",
+          "leading_powerline_symbol": "\ue0d7",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:dark-orange",
@@ -69,6 +72,7 @@
         {
           "type": "os",
           "style": "powerline",
+          "leading_powerline_symbol": "\ue0d7",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:dark-green",
@@ -288,6 +292,7 @@
         {
           "type": "battery",
           "style": "powerline",
+          "leading_powerline_symbol": "\ue0d6",
           "powerline_symbol": "\ue0b2",
           "invert_powerline": true,
           "foreground": "p:battery-foreground",
@@ -307,6 +312,7 @@
         {
           "type": "upgrade",
           "style": "powerline",
+          "leading_powerline_symbol": "\ue0d6",
           "powerline_symbol": "\ue0b2",
           "invert_powerline": true,
           "foreground": "p:upgrade-fg",
@@ -326,6 +332,7 @@
         {
           "type": "text",
           "style": "powerline",
+          "leading_powerline_symbol": "\ue0d7",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:dark-blue",
