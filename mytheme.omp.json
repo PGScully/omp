@@ -2,6 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 2,
   "auto_upgrade": true,
+  "disable_notice": true,
+  "console_title_template": "{{ if .Root }}root {{ end }}{{ .Shell }} in {{ .Folder }}",
+  "shell_integration": true,
+  "final_space": true,
   "palette": {
     "error-bg": "#800000",
     "admin-bg": "#800000",
@@ -43,14 +47,10 @@
     "upgrade-fg": "#111111",
     "upgrade-bg": "#FFD664"
   },
-  "final_space": true,
-  "shell_integration": true,
-  "console_title_template": "{{ if .Root }}root {{ end }}{{ .Shell }} in {{ .Folder }}",
   "blocks": [
     {
       "type": "prompt",
       "alignment": "left",
-      "overflow": "break",
       "segments": [
         {
           "type": "session",
@@ -255,7 +255,7 @@
     {
       "type": "rprompt",
       "alignment": "right",
-      "newline": false,
+      "overflow": "break",
       "segments": [
         {
           "type": "executiontime",
