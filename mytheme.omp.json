@@ -222,7 +222,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:dark-blue",
-          "template": " {{ .Path }} ",
+          "template": "{{ $segment := .Segments.Git }}{{ $icon := \"\uf1d2\" }}{{ if $segment.Dir }} {{ $icon }} {{ $segment.RepoName }}{{ if $segment.IsWorkTree}} \ue21c{{ end }}{{if ne $segment.RepoName .Path}} \ueaf7{{ trimPrefix $segment.Dir .PWD }}{{ end }}{{ else }} \uea83 {{ path .Path .Location }}{{ end }}{{ if not .Writable }} \uf023{{ end }} ",
           "properties": {
             "folder_separator_icon": " \ue0b1 ",
             "home_icon": "~",
