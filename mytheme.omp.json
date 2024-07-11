@@ -107,6 +107,14 @@
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
         },
         {
+          "type": "firebase",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background": "#FFA000",
+          "template": " 󰥧 {{ .Project }}"
+        },
+        {
           "type": "flutter",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
