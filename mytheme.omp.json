@@ -361,7 +361,7 @@
           ],
           "properties": {
             "always_enabled": true,
-            "status_template": "{{ if eq .Code 0 }}\uf00c{{ else }}\uf071 {{ reason .Code }}{{ end }}",
+            "status_template": "{{ if eq .Code 0 }}\uf00c{{ else }}\uf071 {{ .Code | hresult }} {{ reason .Code }}{{ end }}",
             "status_separator": "|"
           }
         }
