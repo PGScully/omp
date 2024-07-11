@@ -357,11 +357,12 @@
           "foreground": "p:white",
           "background": "p:dark-teal",
           "background_templates": [
-            "{{ if .Error }}p:error-bg{{ end }}"
+            "{{ if ne .Code 0 }}p:error-bg{{ end }}"
           ],
-          "template": " {{ .Code }} ",
           "properties": {
-            "always_enabled": true
+            "always_enabled": true,
+            "status_template": "{{ if eq .Code 0 }}\uf00c{{ else }}\uf071 {{ reason .Code }}{{ end }}",
+            "status_separator": "|"
           }
         }
       ]
