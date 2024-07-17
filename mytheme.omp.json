@@ -313,11 +313,12 @@
             "{{if eq \"Discharging\" .State.String}}p:battery-discharging{{end}}",
             "{{if eq \"Full\" .State.String}}p:battery-full{{end}}"
           ],
-          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}% ",
+          "template": " {{ if not .Error }}{{ .Icon }} {{ .Percentage }}%{{ else }}{{ .Error }}{{ end }} ",
           "properties": {
-            "charged_icon": "\ue22f ",
-            "charging_icon": "\ue234 ",
-            "discharging_icon": "\ue231 "
+            "discharging_icon": "\udb84\udea2",
+            "charging_icon": "\udb84\udea5",
+            "charged_icon": "\udb84\udea6",
+            "not_charging_icon": "\udb84\udea3"
           }
         },
         {
