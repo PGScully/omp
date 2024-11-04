@@ -1,8 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "version": 2,
-  "auto_upgrade": false,
-  "disable_notice": true,
+  "version": 3,
   "console_title_template": "{{ if .Root }}root {{ end }}{{ .Shell }} in {{ .Folder }}",
   "shell_integration": true,
   "final_space": true,
@@ -112,10 +110,10 @@
         {
           "type": "firebase",
           "style": "powerline",
-          "powerline_symbol": "",
+          "powerline_symbol": "\ue0b0",
           "foreground": "p:firebase-fg",
           "background": "p:firebase-bg",
-          "template": " 󰥧 {{ .Project }}"
+          "template": " \udb82\udd67 {{ .Project }}"
         },
         {
           "type": "flutter",
@@ -123,10 +121,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
-          "template": " \ue28e {{ .Full }} ",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \ue28e {{ .Full }} "
         },
         {
           "type": "dart",
@@ -134,10 +129,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
-          "template": " \ue798 {{ .Full }} ",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \ue798 {{ .Full }} "
         },
         {
           "type": "python",
@@ -145,10 +137,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:python-fg",
           "background": "p:python-bg",
-          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
         },
         {
           "type": "kotlin",
@@ -156,10 +145,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "p:kotlin-bg",
-          "template": " \ue634 {{ .Full }} ",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \ue634 {{ .Full }} "
         },
         {
           "type": "java",
@@ -167,10 +153,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "p:java-bg",
-          "template": " \ue738 {{ .Full }}",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \ue738 {{ .Full }}"
         },
         {
           "type": "go",
@@ -178,10 +161,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:go-fg",
           "background": "p:go-bg",
-          "template": " \ue724 {{ .Full }} ",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \ue724 {{ .Full }} "
         },
         {
           "type": "rust",
@@ -189,10 +169,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:rust-fg",
           "background": "p:rust-bg",
-          "template": " \ue7a8 {{ .Full }} ",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \ue7a8 {{ .Full }} "
         },
         {
           "type": "ruby",
@@ -200,10 +177,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:dark-red",
-          "template": " \ue739 {{ .Full }}",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \ue739 {{ .Full }}"
         },
         {
           "type": "node",
@@ -211,10 +185,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
           "background": "p:node-bg",
-          "template": " \udb80\udf99 {{ .Full }} ",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \udb80\udf99 {{ .Full }} "
         },
         {
           "type": "npm",
@@ -222,10 +193,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:npm-fg",
           "background": "p:npm-bg",
-          "template": " \ue71e {{ .Full }} ",
-          "properties": {
-            "cache_version": true
-          }
+          "template": " \ue71e {{ .Full }} "
         },
         {
           "type": "path",
@@ -235,9 +203,9 @@
           "background": "p:dark-blue",
           "template": "{{ $segment := .Segments.Git }}{{ $icon := \"\uf1d2\" }}{{ if $segment.Dir }} {{ $icon }} {{ $segment.RepoName }}{{ if $segment.IsWorkTree}} \ue21c{{ end }}{{if ne $segment.RepoName .Path}} \ueaf7 {{ trimPrefix $segment.Dir .PWD }}{{ end }}{{ else }} \uea83 {{ path .Path .Location }}{{ end }}{{ if not .Writable }} \uf023{{ end }} ",
           "properties": {
+            "style": "powerlevel",
             "folder_separator_icon": " \ue0b1 ",
             "home_icon": "~",
-            "style": "powerlevel",
             "max_depth": 4,
             "max_width": 70,
             "mixed_threshold": 4
@@ -257,11 +225,11 @@
           ],
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "properties": {
+            "source": "cli",
             "branch_max_length": 25,
             "fetch_stash_count": true,
             "fetch_status": true,
-            "fetch_upstream_icon": true,
-            "source": "cli"
+            "fetch_upstream_icon": true
           }
         }
       ]
@@ -286,8 +254,8 @@
         {
           "type": "sysinfo",
           "style": "powerline",
-          "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
+          "invert_powerline": true,
           "foreground": "p:ram-fg",
           "background": "p:ram-bg",
           "template": " \ue266 {{ round .PhysicalPercentUsed .Precision }}% ",
@@ -298,8 +266,8 @@
         {
           "type": "time",
           "style": "powerline",
-          "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
+          "invert_powerline": true,
           "foreground": "p:white",
           "background": "p:dark-teal",
           "template": " {{ .CurrentDate | date .Format }} "
@@ -309,7 +277,6 @@
           "style": "powerline",
           "leading_powerline_symbol": "\ue0b2",
           "powerline_symbol": "\ue0d6",
-          "invert_powerline": false,
           "foreground": "p:battery-foreground",
           "background": "p:battery",
           "background_templates": [
@@ -330,12 +297,12 @@
           "style": "powerline",
           "leading_powerline_symbol": "\ue0b2",
           "powerline_symbol": "\ue0d6",
-          "invert_powerline": false,
           "foreground": "p:upgrade-fg",
           "background": "p:upgrade-bg",
           "template": " \uf019 ",
-          "properties": {
-            "cache_timeout": 1320
+          "cache": {
+            "duration": "4h0m0s",
+            "strategy": "folder"
           }
         }
       ]
@@ -368,8 +335,8 @@
           ],
           "properties": {
             "always_enabled": true,
-            "status_template": "{{ if eq .Code 0 }}\uf00c{{ else }}\uf071 {{ .Code | hresult }} {{ reason .Code }}{{ end }}",
-            "status_separator": "|"
+            "status_separator": "|",
+            "status_template": "{{ if eq .Code 0 }}\uf00c{{ else }}\uf071 {{ .Code | hresult }} {{ reason .Code }}{{ end }}"
           }
         }
       ]
