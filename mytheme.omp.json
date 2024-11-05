@@ -301,8 +301,8 @@
           "background": "p:upgrade-bg",
           "template": " \uf019 ",
           "cache": {
-            "duration": "4h0m0s",
-            "strategy": "folder"
+            "duration": "2h",
+            "strategy": "session"
           }
         }
       ]
