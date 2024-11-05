@@ -15,7 +15,7 @@
     "dark-orange": "#B05000",
     "yellow": "#FFFF00",
     "dark-yellow": "#ffc329",
-    "brown": "#804000",
+    "brown": "#803000",
     "teal": "#008080",
     "dark-teal": "#004040",
     "chalk": "#E0E0E0",
@@ -25,7 +25,7 @@
     "battery-full": "p:dark-green",
     "battery-discharging": "p:dark-orange",
     "firebase-fg": "p:chalk",
-    "firebase-bg": "#FFA000",
+    "firebase-bg": "#F0A000",
     "git-foreground": "p:chalk",
     "git": "p:dark-green",
     "git-modified": "p:green",
@@ -47,7 +47,7 @@
     "rust-fg": "#193459",
     "rust-bg": "#99908a",
     "upgrade-fg": "#111111",
-    "upgrade-bg": "#FFD664"
+    "upgrade-bg": "#e5b15a"
   },
   "blocks": [
     {
