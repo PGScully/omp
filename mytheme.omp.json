@@ -302,7 +302,7 @@
           "background": "p:upgrade-bg",
           "template": " \uf019 ",
           "cache": {
-            "duration": "2h",
+            "duration": "1h",
             "strategy": "session"
           }
         }
