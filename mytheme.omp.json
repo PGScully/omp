@@ -61,7 +61,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:dark-orange",
-          "template": " {{ if .SSHSession }}\udb81\udc84{{ end }} "
+          "template": " {{ if .SSHSession }}\udb81\udc84{{ end }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "session"
+          }
         },
         {
           "type": "text",
@@ -70,7 +74,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:dark-orange",
-          "template": " {{ if .WSL }}WSL{{ end }} "
+          "template": " {{ if .WSL }}WSL{{ end }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "session"
+          }
         },
         {
           "type": "os",
@@ -79,7 +87,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:dark-green",
-          "template": " {{ .Icon }} "
+          "template": " {{ .Icon }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "session"
+          }
         },
         {
           "type": "session",
@@ -90,6 +102,10 @@
           "background_templates": [
             "{{ if .Root }}p:admin-bg{{ end }}"
           ],
+          "cache": {
+            "duration": "1h",
+            "strategy": "session"
+          },
           "template": " {{ .UserName }}@{{ .HostName }} "
         },
         {
@@ -106,7 +122,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:brown",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} "
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "firebase",
@@ -114,7 +134,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:firebase-fg",
           "background": "p:firebase-bg",
-          "template": " \udb82\udd67 {{ .Project }}"
+          "template": " \udb82\udd67 {{ .Project }}",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "flutter",
@@ -122,7 +146,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
-          "template": " \ue28e {{ .Full }} "
+          "template": " \ue28e {{ .Full }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "dart",
@@ -130,7 +158,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
-          "template": " \ue798 {{ .Full }} "
+          "template": " \ue798 {{ .Full }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "python",
@@ -138,7 +170,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:python-fg",
           "background": "p:python-bg",
-          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "kotlin",
@@ -146,7 +182,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "p:kotlin-bg",
-          "template": " \ue634 {{ .Full }} "
+          "template": " \ue634 {{ .Full }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "java",
@@ -154,7 +194,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "p:java-bg",
-          "template": " \ue738 {{ .Full }}"
+          "template": " \ue738 {{ .Full }}",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "go",
@@ -162,7 +206,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:go-fg",
           "background": "p:go-bg",
-          "template": " \ue724 {{ .Full }} "
+          "template": " \ue724 {{ .Full }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "rust",
@@ -170,7 +218,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:rust-fg",
           "background": "p:rust-bg",
-          "template": " \ue7a8 {{ .Full }} "
+          "template": " \ue7a8 {{ .Full }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "ruby",
@@ -178,7 +230,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:dark-red",
-          "template": " \ue739 {{ .Full }}"
+          "template": " \ue739 {{ .Full }}",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "node",
@@ -186,7 +242,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:node-bg",
-          "template": " \udb80\udf99 {{ .Full }} "
+          "template": " \udb80\udf99 {{ .Full }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "npm",
@@ -194,7 +254,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:npm-fg",
           "background": "p:npm-bg",
-          "template": " \ue71e {{ .Full }} "
+          "template": " \ue71e {{ .Full }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
         },
         {
           "type": "path",
@@ -203,6 +267,10 @@
           "foreground": "p:chalk",
           "background": "p:dark-blue",
           "template": "{{ $segment := .Segments.Git }}{{ $icon := \"\uf1d2\" }}{{ if $segment.Dir }} {{ $icon }} {{ $segment.RepoName }}{{ if $segment.IsWorkTree}} \ue21c{{ end }}{{if ne $segment.RepoName .Path}} \ueaf7 {{ trimPrefix $segment.Dir .PWD }}{{ end }}{{ else }} \uea83 {{ path .Path .Location }}{{ end }}{{ if not .Writable }} \uf023{{ end }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          },
           "properties": {
             "style": "powerlevel",
             "folder_separator_icon": " \ue0b1 ",
