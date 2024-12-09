@@ -1,6 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 3,
+  "upgrade": {
+    "notice": true,
+    "interval": "8h",
+    "auto": false,
+    "source": "cdn"
+  },
   "console_title_template": "{{ if .Root }}root {{ end }}{{ .Shell }} in {{ .Folder }}",
   "shell_integration": true,
   "final_space": true,
