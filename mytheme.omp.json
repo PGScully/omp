@@ -130,7 +130,7 @@
           "background": "p:brown",
           "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -142,7 +142,7 @@
           "background": "p:firebase-bg",
           "template": " \udb82\udd67 {{ .Project }}",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -154,7 +154,7 @@
           "background": "blue",
           "template": " \ue28e {{ .Full }} ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -166,7 +166,7 @@
           "background": "blue",
           "template": " \ue798 {{ .Full }} ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -177,9 +177,8 @@
           "foreground": "p:python-fg",
           "background": "p:python-bg",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
-          "cache": {
-            "duration": "1h",
-            "strategy": "folder"
+          "properties": {
+            "display_mode": "context"
           }
         },
         {
@@ -190,7 +189,7 @@
           "background": "p:kotlin-bg",
           "template": " \ue634 {{ .Full }} ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -202,7 +201,7 @@
           "background": "p:java-bg",
           "template": " \ue738 {{ .Full }}",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -214,7 +213,7 @@
           "background": "p:go-bg",
           "template": " \ue724 {{ .Full }} ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -226,7 +225,7 @@
           "background": "p:rust-bg",
           "template": " \ue7a8 {{ .Full }} ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -238,7 +237,7 @@
           "background": "p:dark-red",
           "template": " \ue739 {{ .Full }}",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -250,7 +249,7 @@
           "background": "p:node-bg",
           "template": " \udb80\udf99 {{ .Full }} ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -262,7 +261,7 @@
           "background": "p:npm-bg",
           "template": " \ue71e {{ .Full }} ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           }
         },
@@ -274,7 +273,7 @@
           "background": "p:dark-blue",
           "template": "{{ $segment := .Segments.Git }}{{ $icon := \"\uf1d2\" }}{{ if $segment.Dir }} {{ $icon }} {{ $segment.RepoName }}{{ if $segment.IsWorkTree}} \ue21c{{ end }}{{if ne $segment.RepoName .Path}} \ueaf7 {{ trimPrefix $segment.Dir .PWD }}{{ end }}{{ else }} \uea83 {{ path .Path .Location }}{{ end }}{{ if not .Writable }} \uf023{{ end }} ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "folder"
           },
           "properties": {
@@ -299,10 +298,6 @@
             "{{ if gt .Behind 0 }}p:git-behind{{ end }}"
           ],
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
-          "cache": {
-            "duration": "1m",
-            "strategy": "folder"
-          },
           "properties": {
             "source": "cli",
             "branch_max_length": 25,
@@ -380,7 +375,7 @@
           "background": "p:upgrade-bg",
           "template": " \uf019 ",
           "cache": {
-            "duration": "1h",
+            "duration": "1m",
             "strategy": "session"
           }
         }
