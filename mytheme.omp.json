@@ -98,7 +98,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:dark-orange",
-          "template": " {{ if .WSL }}{{.var.symbols.wsl}}{{ end }} ",
+          "template": " {{ if .WSL }}WSL{{ end }} ",
           "cache": {
             "duration": "1h",
             "strategy": "session"
