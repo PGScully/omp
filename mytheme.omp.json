@@ -85,7 +85,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:dark-orange",
-          "template": " {{ if .SSHSession }}{{.var.symbols.ssh}}{{ end }} ",
+          "template": " {{ if .SSHSession }}\udb81\udc84{{ end }} ",
           "cache": {
             "duration": "1h",
             "strategy": "session"
