@@ -56,6 +56,23 @@
     "upgrade-fg": "#111111",
     "upgrade-bg": "#e5b15a"
   },
+  "var": {
+    "symbols":{
+      "ssh": "\udb81\udc84",
+      "wsl": "WSL",
+      "project":"\uf487",
+      "firebase": "\udb82\udd67",
+      "flutter": "\ue28e",
+      "dart": "\ue798",
+      "python": "\ue235",
+      "kotlin": "\ue634",
+      "java": "\ue738",
+      "go": "\ue724",
+      "rust": "\ue7a8",
+      "node": "\udb80\udf99",
+      "npm": "\ue71e"
+    }
+  },
   "blocks": [
     {
       "type": "prompt",
@@ -68,7 +85,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:dark-orange",
-          "template": " {{ if .SSHSession }}\udb81\udc84{{ end }} ",
+          "template": " {{ if .SSHSession }}{{.var.symbols.ssh}}{{ end }} ",
           "cache": {
             "duration": "1h",
             "strategy": "session"
@@ -81,7 +98,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:dark-orange",
-          "template": " {{ if .WSL }}WSL{{ end }} ",
+          "template": " {{ if .WSL }}{{.var.symbols.wsl}}{{ end }} ",
           "cache": {
             "duration": "1h",
             "strategy": "session"
@@ -141,7 +158,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:firebase-fg",
           "background": "p:firebase-bg",
-          "template": " \udb82\udd67 {{ .Project }}",
+          "template": " {{.var.symbols.firebase}} {{ .Project }}",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
@@ -153,7 +170,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
-          "template": " \ue28e {{ .Full }} ",
+          "template": " {{.Var.symbols.flutter}} {{ .Full }} ",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
@@ -165,7 +182,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
-          "template": " \ue798 {{ .Full }} ",
+          "template": " {{.Var.symbols.dart}} {{ .Full }} ",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
@@ -177,7 +194,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:python-fg",
           "background": "p:python-bg",
-          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "template": " {{.var.symbols.python}} {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "properties": {
             "display_mode": "context"
           }
@@ -188,7 +205,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "p:kotlin-bg",
-          "template": " \ue634 {{ .Full }} ",
+          "template": " {{.var.symbols.kotlin}} {{ .Full }} ",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
@@ -200,7 +217,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "p:java-bg",
-          "template": " \ue738 {{ .Full }}",
+          "template": " {{.var.symbols.java}} {{ .Full }}",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
@@ -212,7 +229,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:go-fg",
           "background": "p:go-bg",
-          "template": " \ue724 {{ .Full }} ",
+          "template": " {{.var.symbols.go}} {{ .Full }} ",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
@@ -224,19 +241,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:rust-fg",
           "background": "p:rust-bg",
-          "template": " \ue7a8 {{ .Full }} ",
-          "cache": {
-            "duration": "1m",
-            "strategy": "folder"
-          }
-        },
-        {
-          "type": "ruby",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "p:chalk",
-          "background": "p:dark-red",
-          "template": " \ue739 {{ .Full }}",
+          "template": " {{.var.symbols.rust}} {{ .Full }} ",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
@@ -248,7 +253,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:node-bg",
-          "template": " \udb80\udf99 {{ .Full }} ",
+          "template": " {{.var.symbols.node}} {{ .Full }} ",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
@@ -260,7 +265,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:npm-fg",
           "background": "p:npm-bg",
-          "template": " \ue71e {{ .Full }} ",
+          "template": " {{.var.symbols.npm}} {{ .Full }} ",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
