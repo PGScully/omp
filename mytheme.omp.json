@@ -146,7 +146,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:brown",
-          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} ",
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}} {{ end }}{{ if .Name }}{{- .Name -}}{{ end }}{{ end }} ",
           "cache": {
             "duration": "1m",
             "strategy": "folder"
