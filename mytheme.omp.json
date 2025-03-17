@@ -226,7 +226,7 @@
           "background": "p:kotlin-bg",
           "template": " {{.var.symbols.kotlin}} {{ .Full }} ",
           "properties": {
-            "fetch_version": false,
+            "fetch_version": true,
             "cache_duration": "12h"
           },
           "cache": {
@@ -258,7 +258,7 @@
           "background": "p:go-bg",
           "template": " {{.var.symbols.go}} {{ .Full }} ",
           "properties": {
-            "fetch_version": false,
+            "fetch_version": true,
             "cache_duration": "12h"
           },
           "cache": {
@@ -274,7 +274,7 @@
           "background": "p:rust-bg",
           "template": " {{.var.symbols.rust}} {{ .Full }} ",
           "properties": {
-            "fetch_version": false,
+            "fetch_version": true,
             "cache_duration": "12h"
           },
           "cache": {
