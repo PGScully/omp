@@ -56,23 +56,6 @@
     "upgrade-fg": "#111111",
     "upgrade-bg": "#e5b15a"
   },
-  "var": {
-    "symbols":{
-      "ssh": "\udb81\udc84",
-      "wsl": "WSL",
-      "project":"\uf487",
-      "firebase": "\udb82\udd67",
-      "flutter": "\ue28e",
-      "dart": "\ue798",
-      "python": "\ue235",
-      "kotlin": "\ue634",
-      "java": "\ue738",
-      "go": "\ue724",
-      "rust": "\ue7a8",
-      "node": "\udb80\udf99",
-      "npm": "\ue71e"
-    }
-  },
   "blocks": [
     {
       "type": "prompt",
@@ -162,7 +145,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:firebase-fg",
           "background": "p:firebase-bg",
-          "template": " {{.var.symbols.firebase}} {{ .Project }}",
+          "template": " \udb82\udd67 {{ .Project }}",
           "cache": {
             "duration": "1h",
             "strategy": "folder"
@@ -174,7 +157,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
-          "template": " {{.Var.symbols.flutter}} {{ .Full }} ",
+          "template": " \ue28e {{ .Full }} ",
           "properties": {
             "fetch_version": true,
             "cache_duration": "12h"
@@ -190,7 +173,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "blue",
-          "template": " {{.Var.symbols.dart}} {{ .Full }} ",
+          "template": " \ue798 {{ .Full }} ",
           "properties": {
             "fetch_version": true,
             "cache_duration": "12h"
@@ -206,7 +189,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:python-fg",
           "background": "p:python-bg",
-          "template": " {{.var.symbols.python}} {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "properties": {
             "fetch_version": true,
             "cache_duration": "12h",
@@ -224,7 +207,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "p:kotlin-bg",
-          "template": " {{.var.symbols.kotlin}} {{ .Full }} ",
+          "template": " \ue634 {{ .Full }} ",
           "properties": {
             "fetch_version": true,
             "cache_duration": "12h"
@@ -240,7 +223,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:yellow",
           "background": "p:java-bg",
-          "template": " {{.var.symbols.java}} {{ .Full }}",
+          "template": " \ue738 {{ .Full }}",
           "properties": {
             "fetch_version": true,
             "cache_duration": "12h"
@@ -256,7 +239,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:go-fg",
           "background": "p:go-bg",
-          "template": " {{.var.symbols.go}} {{ .Full }} ",
+          "template": " \ue724 {{ .Full }} ",
           "properties": {
             "fetch_version": true,
             "cache_duration": "12h"
@@ -272,7 +255,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:rust-fg",
           "background": "p:rust-bg",
-          "template": " {{.var.symbols.rust}} {{ .Full }} ",
+          "template": " \ue7a8 {{ .Full }} ",
           "properties": {
             "fetch_version": true,
             "cache_duration": "12h"
@@ -288,7 +271,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:chalk",
           "background": "p:node-bg",
-          "template": " {{.var.symbols.node}} {{ .Full }} ",
+          "template": " \udb80\udf99 {{ .Full }} ",
           "properties": {
             "fetch_version": true,
             "cache_duration": "12h"
@@ -304,7 +287,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:npm-fg",
           "background": "p:npm-bg",
-          "template": " {{.var.symbols.npm}} {{ .Full }} ",
+          "template": " \ue71e {{ .Full }} ",
           "properties": {
             "fetch_version": true,
             "cache_duration": "12h"
