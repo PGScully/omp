@@ -171,8 +171,11 @@
           "foreground": "p:yellow",
           "background": "blue",
           "template": " {{.Var.symbols.flutter}} {{ .Full }} ",
+          "properties": {
+            "fetch_version": false
+          },
           "cache": {
-            "duration": "1m",
+            "duration": "1h",
             "strategy": "folder"
           }
         },
@@ -183,8 +186,11 @@
           "foreground": "p:yellow",
           "background": "blue",
           "template": " {{.Var.symbols.dart}} {{ .Full }} ",
+          "properties": {
+            "fetch_version": false
+          },
           "cache": {
-            "duration": "1m",
+            "duration": "1h",
             "strategy": "folder"
           }
         },
@@ -196,7 +202,13 @@
           "background": "p:python-bg",
           "template": " {{.var.symbols.python}} {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "properties": {
+            "fetch_version": true,
+            "fetch_virtual_env": true,
             "display_mode": "context"
+          },
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
           }
         },
         {
@@ -206,8 +218,11 @@
           "foreground": "p:yellow",
           "background": "p:kotlin-bg",
           "template": " {{.var.symbols.kotlin}} {{ .Full }} ",
+          "properties": {
+            "fetch_version": false
+          },
           "cache": {
-            "duration": "1m",
+            "duration": "1h",
             "strategy": "folder"
           }
         },
@@ -218,8 +233,11 @@
           "foreground": "p:yellow",
           "background": "p:java-bg",
           "template": " {{.var.symbols.java}} {{ .Full }}",
+          "properties": {
+            "fetch_version": true
+          },
           "cache": {
-            "duration": "1m",
+            "duration": "1h",
             "strategy": "folder"
           }
         },
@@ -230,8 +248,11 @@
           "foreground": "p:go-fg",
           "background": "p:go-bg",
           "template": " {{.var.symbols.go}} {{ .Full }} ",
+          "properties": {
+            "fetch_version": false
+          },
           "cache": {
-            "duration": "1m",
+            "duration": "1h",
             "strategy": "folder"
           }
         },
@@ -242,8 +263,11 @@
           "foreground": "p:rust-fg",
           "background": "p:rust-bg",
           "template": " {{.var.symbols.rust}} {{ .Full }} ",
+          "properties": {
+            "fetch_version": false
+          },
           "cache": {
-            "duration": "1m",
+            "duration": "1h",
             "strategy": "folder"
           }
         },
@@ -254,8 +278,11 @@
           "foreground": "p:chalk",
           "background": "p:node-bg",
           "template": " {{.var.symbols.node}} {{ .Full }} ",
+          "properties": {
+            "fetch_version": true
+          },
           "cache": {
-            "duration": "1m",
+            "duration": "1h",
             "strategy": "folder"
           }
         },
@@ -266,8 +293,11 @@
           "foreground": "p:npm-fg",
           "background": "p:npm-bg",
           "template": " {{.var.symbols.npm}} {{ .Full }} ",
+          "properties": {
+            "fetch_version": true
+          },
           "cache": {
-            "duration": "1m",
+            "duration": "1h",
             "strategy": "folder"
           }
         },
