@@ -184,6 +184,22 @@
           }
         },
         {
+          "type": "dotnet",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#000000",
+          "background": "#00ffff",
+          "template": "  {{ .Full }} ",
+          "properties": {
+            "fetch_version": true,
+            "cache_duration": "12h"
+          },
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          }
+        },
+        {
           "type": "python",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
