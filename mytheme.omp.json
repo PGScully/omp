@@ -192,12 +192,12 @@
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "properties": {
             "fetch_version": true,
-            "cache_duration": "12h",
             "fetch_virtual_env": true,
+            "cache_duration": "none",
             "display_mode": "context"
           },
           "cache": {
-            "duration": "1h",
+            "duration": "none",
             "strategy": "folder"
           }
         },
