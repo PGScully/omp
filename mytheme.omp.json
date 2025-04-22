@@ -397,8 +397,8 @@
         {
           "type": "battery",
           "style": "powerline",
-          "powerline_symbol": "\ue0b2",
-          "invert_powerline": true,
+          "leading_powerline_symbol": "\ue0b2",
+          "powerline_symbol": "\ue0d6",
           "foreground": "p:battery-foreground",
           "background": "p:battery",
           "background_templates": [
@@ -417,8 +417,8 @@
         {
           "type": "upgrade",
           "style": "powerline",
-          "powerline_symbol": "\ue0b2",
-          "invert_powerline": true,
+          "leading_powerline_symbol": "\ue0b2",
+          "powerline_symbol": "\ue0d6",
           "foreground": "p:upgrade-fg",
           "background": "p:upgrade-bg",
           "template": " \uf019 ",
