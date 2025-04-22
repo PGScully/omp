@@ -364,8 +364,8 @@
         {
           "type": "executiontime",
           "style": "powerline",
-          "powerline_symbol": "\ue0b2",
-          "invert_powerline": true,
+          "leading_powerline_symbol": "\ue0b2",
+          "powerline_symbol": "\ue0d6",
           "foreground": "p:chalk",
           "background": "p:exec-time",
           "template": " {{ .FormattedMs }} ",
@@ -376,8 +376,8 @@
         {
           "type": "sysinfo",
           "style": "powerline",
-          "powerline_symbol": "\ue0b2",
-          "invert_powerline": true,
+          "leading_powerline_symbol": "\ue0b2",
+          "powerline_symbol": "\ue0d6",
           "foreground": "p:ram-fg",
           "background": "p:ram-bg",
           "template": " \ue266 {{ round .PhysicalPercentUsed .Precision }}% ",
@@ -388,8 +388,8 @@
         {
           "type": "time",
           "style": "powerline",
-          "powerline_symbol": "\ue0b2",
-          "invert_powerline": true,
+          "leading_powerline_symbol": "\ue0b2",
+          "powerline_symbol": "\ue0d6",
           "foreground": "p:chalk",
           "background": "p:dark-teal",
           "template": " {{ .CurrentDate | date .Format }} "
