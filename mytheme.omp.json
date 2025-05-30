@@ -9,6 +9,7 @@
   },
   "console_title_template": "{{ if .Root }}root {{ end }}{{ .Shell }} in {{ .Folder }}",
   "shell_integration": true,
+  "async": true,
   "final_space": true,
   "palette": {
     "error-bg": "#800000",
