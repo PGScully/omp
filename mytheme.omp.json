@@ -422,9 +422,12 @@
           "powerline_symbol": "\ue0d6",
           "foreground": "p:upgrade-fg",
           "background": "p:upgrade-bg",
-          "template": " \uf019 ",
+          "template": " \uf019 {{ .Current }} -> {{ .Latest }} ",
+          "properties": {
+            "cache_duration": "12h"
+          },
           "cache": {
-            "duration": "1m",
+            "duration": "5m",
             "strategy": "session"
           }
         }
