@@ -417,6 +417,18 @@
           ]
         },
         {
+          "type": "winget",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background": "#0077c2",
+          "template": "  {{ .UpdateCount }} ",
+          "cache": {
+            "duration": "1h",
+            "strategy": "session"
+          }
+        },
+        {
           "options": {
             "cache_duration": "12h"
           },
