@@ -87,7 +87,7 @@
         {
           "cache": {
             "duration": "1h",
-            "strategy": "session"
+            "strategy": "device"
           },
           "template": " {{ .Icon }} ",
           "foreground": "p:chalk",
@@ -137,6 +137,10 @@
           "style": "powerline"
         },
         {
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          },
           "type": "terraform",
           "style": "powerline",
           "powerline_symbol": "",
@@ -163,7 +167,7 @@
           },
           "cache": {
             "duration": "1h",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue28e {{ .Full }} ",
           "foreground": "p:yellow",
@@ -179,7 +183,7 @@
           },
           "cache": {
             "duration": "1h",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue798 {{ .Full }} ",
           "foreground": "p:yellow",
@@ -245,7 +249,7 @@
           },
           "cache": {
             "duration": "1h",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue738 {{ .Full }}",
           "foreground": "p:yellow",
@@ -261,7 +265,7 @@
           },
           "cache": {
             "duration": "1h",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue724 {{ .Full }} ",
           "foreground": "p:go-fg",
@@ -277,7 +281,7 @@
           },
           "cache": {
             "duration": "1h",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue7a8 {{ .Full }} ",
           "foreground": "p:rust-fg",
