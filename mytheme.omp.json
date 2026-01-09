@@ -166,8 +166,8 @@
             "fetch_version": true
           },
           "cache": {
-            "duration": "1h",
-            "strategy": "device"
+            "duration": "15m",
+            "strategy": "folder"
           },
           "template": " \ue28e {{ .Full }} ",
           "foreground": "p:yellow",
@@ -182,8 +182,8 @@
             "fetch_version": true
           },
           "cache": {
-            "duration": "1h",
-            "strategy": "device"
+            "duration": "15m",
+            "strategy": "folder"
           },
           "template": " \ue798 {{ .Full }} ",
           "foreground": "p:yellow",
@@ -248,8 +248,8 @@
             "fetch_version": true
           },
           "cache": {
-            "duration": "1h",
-            "strategy": "device"
+            "duration": "15m",
+            "strategy": "folder"
           },
           "template": " \ue738 {{ .Full }}",
           "foreground": "p:yellow",
@@ -264,8 +264,8 @@
             "fetch_version": true
           },
           "cache": {
-            "duration": "1h",
-            "strategy": "device"
+            "duration": "15m",
+            "strategy": "folder"
           },
           "template": " \ue724 {{ .Full }} ",
           "foreground": "p:go-fg",
@@ -280,8 +280,8 @@
             "fetch_version": true
           },
           "cache": {
-            "duration": "1h",
-            "strategy": "device"
+            "duration": "15m",
+            "strategy": "folder"
           },
           "template": " \ue7a8 {{ .Full }} ",
           "foreground": "p:rust-fg",
