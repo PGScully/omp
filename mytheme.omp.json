@@ -345,7 +345,7 @@
         {
           "type": "jujutsu",
           "style": "powerline",
-          "powerline_symbol": "",
+          "powerline_symbol": "\ue0b0",
           "foreground": "#193549",
           "background": "#ffeb3b",
           "options": {
