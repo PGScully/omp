@@ -346,8 +346,9 @@
           "type": "jujutsu",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "foreground": "#193549",
-          "background": "#ffeb3b",
+          "foreground": "#ffeb3b",
+          "background": "#193549",
+          "template": " \uf1fa{{.ChangeID}}{{if .Working.Changed}} \uf044 {{ .Working.String }}{{ end }}",
           "options": {
             "fetch_status": true,
             "ignore_working_copy": false,
