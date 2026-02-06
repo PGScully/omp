@@ -9,6 +9,8 @@
     "battery": "p:dark-green",
     "brown": "#803000",
     "chalk": "#E0E0E0",
+    "claude-bg": "#FF6B35",
+    "claude-fg": "#FFFFFF",
     "dark-blue": "#000070",
     "dark-green": "#006000",
     "dark-lavender": "#734F96",
@@ -343,6 +345,14 @@
           "background": "p:dark-blue",
           "type": "path",
           "style": "powerline"
+        },
+        {
+          "type": "claude",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:claude-fg",
+          "background": "p:claude-bg",
+          "template": " 󰯉 {{ .Model.DisplayName }}  {{ .TokenUsagePercent.GaugeUsed }} "
         },
         {
           "type": "jujutsu",
