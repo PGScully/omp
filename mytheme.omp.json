@@ -352,7 +352,11 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:claude-fg",
           "background": "p:claude-bg",
-          "template": " 󰯉 {{ .Model.DisplayName }}  {{ .TokenUsagePercent.GaugeUsed }} "
+          "template": " 󰯉 {{ .Model.DisplayName }}  {{ .TokenUsagePercent.GaugeUsed }} ",
+          "cache": {
+            "duration": "1m",
+            "strategy": "folder"
+          }
         },
         {
           "type": "jujutsu",
