@@ -364,7 +364,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:jj-fg",
           "background": "p:jj-bg",
-          "template": " \uf1fa{{.ChangeID}}{{if .Working.Changed}} \uf044 {{ .Working.String }}{{ end }}",
+          "template": " \uf1fa {{.ChangeID}}{{if .Working.Changed}} \uf044 {{ .Working.String }}{{ end }}",
           "options": {
             "fetch_status": true,
             "ignore_working_copy": false,
