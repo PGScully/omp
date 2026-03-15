@@ -399,6 +399,7 @@
       "segments": [
         {
           "options": {
+            "style": "roundrock",
             "always_enabled": true
           },
           "template": " {{ .FormattedMs }} ",
