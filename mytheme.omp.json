@@ -189,7 +189,7 @@
             "duration": "15m",
             "strategy": "folder"
           },
-          "template": " \ue798 {{ .Full }} ",
+          "template": "{{ if not ( .Segments.Contains \"Flutter\" ) }} \ue798 {{ .Full }} {{ end }}",
           "foreground": "p:yellow",
           "powerline_symbol": "\ue0b0",
           "background": "blue",
