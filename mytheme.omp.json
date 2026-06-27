@@ -165,6 +165,14 @@
           "style": "powerline"
         },
         {
+          "type": "gradle",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "#ffffff",
+          "background": "#02303a",
+          "template": " \ue7f2 {{ .Full }} \ue634 {{ .KotlinVersion }} "
+        },
+        {
           "options": {
             "cache_duration": "12h",
             "fetch_version": true
@@ -345,18 +353,6 @@
           "background": "p:dark-blue",
           "type": "path",
           "style": "powerline"
-        },
-        {
-          "type": "claude",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "p:claude-fg",
-          "background": "p:claude-bg",
-          "template": " 󰯉 {{ .Model.DisplayName }}  {{ .TokenUsagePercent.GaugeUsed }} ",
-          "cache": {
-            "duration": "1m",
-            "strategy": "folder"
-          }
         },
         {
           "type": "jujutsu",
