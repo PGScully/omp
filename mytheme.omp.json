@@ -165,6 +165,14 @@
           "style": "powerline"
         },
         {
+          "options": {
+            "cache_duration": "12h",
+            "fetch_version": true
+          },
+          "cache": {
+            "duration": "1h",
+            "strategy": "folder"
+          },
           "type": "gradle",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
