@@ -187,7 +187,7 @@
           },
           "cache": {
             "duration": "15m",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue28e {{ .Full }} ",
           "foreground": "p:yellow",
@@ -203,7 +203,7 @@
           },
           "cache": {
             "duration": "15m",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": "{{ if not ( .Segments.Contains \"Flutter\" ) }} \ue798 {{ .Full }} {{ end }}",
           "foreground": "p:yellow",
@@ -237,7 +237,7 @@
           },
           "cache": {
             "duration": "none",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "foreground": "p:python-fg",
@@ -269,7 +269,7 @@
           },
           "cache": {
             "duration": "15m",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue738 {{ .Full }}",
           "foreground": "p:yellow",
@@ -285,7 +285,7 @@
           },
           "cache": {
             "duration": "15m",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue724 {{ .Full }} ",
           "foreground": "p:go-fg",
@@ -301,7 +301,7 @@
           },
           "cache": {
             "duration": "15m",
-            "strategy": "folder"
+            "strategy": "device"
           },
           "template": " \ue7a8 {{ .Full }} ",
           "foreground": "p:rust-fg",
