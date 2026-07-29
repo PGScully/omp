@@ -389,10 +389,10 @@
           "type": "git",
           "style": "powerline",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:git-modified{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:git-diverged{{ end }}",
-            "{{ if gt .Ahead 0 }}p:git-ahead{{ end }}",
-            "{{ if gt .Behind 0 }}p:git-behind{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}dark-gradient(p:git-modified){{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}dark-gradient(p:git-diverged){{ end }}",
+            "{{ if gt .Ahead 0 }}dark-gradient(p:git-ahead){{ end }}",
+            "{{ if gt .Behind 0 }}dark-gradient(p:git-behind){{ end }}"
           ]
         }
       ]
@@ -451,9 +451,9 @@
           "style": "powerline",
           "leading_powerline_symbol": "\ue0b2",
           "background_templates": [
-            "{{if eq \"Charging\" .State.String}}dark-gradient(p:battery-charging){{end}}",
-            "{{if eq \"Discharging\" .State.String}}dark-gradient(p:battery-discharging){{end}}",
-            "{{if eq \"Full\" .State.String}}dark-gradient(p:battery-full){{end}}"
+            "{{if eq \"Charging\" .State.String}}light-gradient(p:battery-charging){{end}}",
+            "{{if eq \"Discharging\" .State.String}}light-gradient(p:battery-discharging){{end}}",
+            "{{if eq \"Full\" .State.String}}light-gradient(p:battery-full){{end}}"
           ]
         },
         {
