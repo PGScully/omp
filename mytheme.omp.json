@@ -346,7 +346,11 @@
         {
           "options": {
             "folder_separator_icon": " \ue0b1 ",
-            "home_icon": "~",
+            "gitdir_format": "\uf1d2 %s",
+            "home_icon": "\uf015",
+            "mapped_locations": {
+              "C:\\Users\\peter\\Projects": "\udb84\udf23"
+            },
             "max_depth": 4,
             "max_width": 70,
             "mixed_threshold": 4,
@@ -356,7 +360,7 @@
             "duration": "1m",
             "strategy": "folder"
           },
-          "template": "{{ $segment := .Segments.Git }}{{ $icon := \"\uf1d2\" }}{{ if $segment.Dir }} {{ $icon }} {{ $segment.RepoName }}{{ if $segment.IsWorkTree}} \ue21c{{ end }}{{if ne $segment.RepoName .Path}} \ueaf7 {{ trimPrefix $segment.Dir .PWD }}{{ end }}{{ else }} \uea83 {{ path .Path .Location }}{{ end }}{{ if not .Writable }} \uf023{{ end }} ",
+          "template": "\uea83 {{ path .Path .Location }}{{ if not .Writable }} \uf023{{ end }} ",
           "foreground": "p:chalk",
           "powerline_symbol": "\ue0b0",
           "background": "dark-gradient(p:dark-blue)",
