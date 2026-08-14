@@ -349,7 +349,9 @@
             "gitdir_format": "\uf1d2 %s",
             "home_icon": "\uf015",
             "mapped_locations": {
-              "C:\\Users\\peter\\Projects": "\udb84\udf23"
+              "C:\\Users\\peter\\Projects": "\udb84\udf23",
+              "C:\\Users\\peter\\Samples": "\udb81\uded0",
+              "C:\\Users\\peter\\Websites": "\udb81\udd9f"
             },
             "max_depth": 4,
             "max_width": 70,
@@ -360,7 +362,7 @@
             "duration": "1m",
             "strategy": "folder"
           },
-          "template": "\uea83 {{ path .Path .Location }}{{ if not .Writable }} \uf023{{ end }} ",
+          "template": "{{ path .Path .Location }}{{ if not .Writable }} \uf023{{ end }} ",
           "foreground": "p:chalk",
           "powerline_symbol": "\ue0b0",
           "background": "dark-gradient(p:dark-blue)",
