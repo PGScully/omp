@@ -345,6 +345,8 @@
         },
         {
           "options": {
+            "dir_length": 3,
+            "full_length_dirs": 2,
             "folder_separator_icon": " \ue0b1 ",
             "gitdir_format": "\uf1d2 %s",
             "home_icon": "\uf015",
@@ -356,7 +358,7 @@
             "max_depth": 4,
             "max_width": 70,
             "mixed_threshold": 4,
-            "style": "powerlevel"
+            "style": "fish"
           },
           "cache": {
             "duration": "1m",

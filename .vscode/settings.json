@@ -1,14 +1,15 @@
 {
-    "cSpell.words": [
-        "agnoster",
-        "azfunc",
-        "executiontime",
-        "hresult",
-        "powerlevel",
-        "powerline",
-        "roundrock",
-        "rprompt",
-        "sysinfo",
-        "Venv"
-    ]
+  "cSpell.words": [
+    "agnoster",
+    "azfunc",
+    "executiontime",
+    "gitdir",
+    "hresult",
+    "powerlevel",
+    "powerline",
+    "roundrock",
+    "rprompt",
+    "sysinfo",
+    "Venv"
+  ]
 }
