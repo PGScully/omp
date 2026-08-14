@@ -362,7 +362,7 @@
             "duration": "1m",
             "strategy": "folder"
           },
-          "template": "{{ path .Path .Location }}{{ if not .Writable }} \uf023{{ end }} ",
+          "template": " {{ path .Path .Location }}{{ if not .Writable }} \uf023{{ end }} ",
           "foreground": "p:chalk",
           "powerline_symbol": "\ue0b0",
           "background": "dark-gradient(p:dark-blue)",
