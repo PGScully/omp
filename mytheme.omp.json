@@ -167,7 +167,6 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
             "fetch_version": true,
             "display_mode": "context"
           },
@@ -184,12 +183,11 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
+            "cache_duration": "1h",
             "fetch_version": true,
             "display_mode": "context"
           },
           "cache": {
-            "duration": "15m",
             "strategy": "device"
           },
           "template": " \ue28e {{ .Full }} ",
@@ -201,12 +199,11 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
+            "cache_duration": "1h",
             "fetch_version": true,
             "display_mode": "context"
           },
           "cache": {
-            "duration": "15m",
             "strategy": "device"
           },
           "template": "{{ if not ( .Segments.Contains \"Flutter\" ) }} \ue798 {{ .Full }} {{ end }}",
@@ -218,7 +215,6 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
             "fetch_version": true,
             "display_mode": "context"
           },
@@ -241,7 +237,6 @@
             "fetch_virtual_env": true
           },
           "cache": {
-            "duration": "none",
             "strategy": "device"
           },
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
@@ -253,7 +248,6 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
             "fetch_version": true,
             "display_mode": "context"
           },
@@ -270,12 +264,11 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
+            "cache_duration": "15m",
             "fetch_version": true,
             "display_mode": "context"
           },
           "cache": {
-            "duration": "15m",
             "strategy": "device"
           },
           "template": " \ue738 {{ .Full }}",
@@ -287,12 +280,11 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
+            "cache_duration": "15m",
             "fetch_version": true,
             "display_mode": "context"
           },
           "cache": {
-            "duration": "15m",
             "strategy": "device"
           },
           "template": " \ue724 {{ .Full }} ",
@@ -304,12 +296,11 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
+            "cache_duration": "15m",
             "fetch_version": true,
             "display_mode": "context"
           },
           "cache": {
-            "duration": "15m",
             "strategy": "device"
           },
           "template": " \ue7a8 {{ .Full }} ",
@@ -321,7 +312,6 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
             "fetch_version": true,
             "display_mode": "context"
           },
@@ -338,7 +328,6 @@
         },
         {
           "options": {
-            "cache_duration": "12h",
             "fetch_version": true,
             "display_mode": "context"
           },
@@ -478,7 +467,7 @@
         },
         {
           "options": {
-            "cache_duration": "12h"
+            "cache_duration": "5m"
           },
           "cache": {
             "duration": "5m",
