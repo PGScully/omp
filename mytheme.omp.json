@@ -118,6 +118,20 @@
           ]
         },
         {
+          "type": "sshagent",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:chalk",
+          "background": "dark-gradient(p:dark-orange)",
+          "template": "{{ if .Running }} \uf43d {{ .Count }} {{ end }}",
+          "options": {
+            "key_separator": ", ",
+            "mapped_keys": {
+              "SHA256:LwhGpDXugKBVNrW/NNdEgntQyNB8GAzk71UdAE7Qrq4": "personal"
+            }
+          }
+        },
+        {
           "cache": {
             "duration": "1h",
             "strategy": "folder"
